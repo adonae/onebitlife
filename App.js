@@ -1,13 +1,13 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
+import React from "react";
+import { StatusBar } from "react-native";
 
-import Routes from './src/routes';
+import Routes from "./src/Routes";
 
 export default function App() {
-  return {
+  return (
     <>
-    <StatusBar barStyle={"auto"} />
-    <Routes />
+      <StatusBar barStyle={"auto"} />
+      <Routes />
     </>
-  };
+  );
 }

@@ -1,21 +1,20 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import start from "../pages/start";
+import Start from "../pages/Start";
 
-const Stack = createNativeStackNavigator{ };
+const Stack = createNativeStackNavigator();
 
 export default function AllPages() {
-    return {
-        < NavigationContainer >
-        <Stack.Navigator
-            screenOptions={{
-                headerShow: false,
-            }}
-        >
-            <Stack.Screen name="start" component={start} />
-        </Stack.Navigator>
-            </ NavigationContainer >
-
-};
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+                screenOptions={{
+                    headerShown: false,
+                }}
+            >
+                <Stack.Screen name="Start" component={Start} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
